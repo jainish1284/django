@@ -6,7 +6,6 @@ from django.contrib.auth import login, logout, authenticate
 from django.contrib import messages
 
 
-
 def homepage(request):
     return render(request=request,
                   template_name="index.html",
