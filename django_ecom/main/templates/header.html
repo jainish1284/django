@@ -10,18 +10,9 @@
 
 
 <body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="/" class="brand-logo">Tutorials</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/">Home</a></li>
-        <li><a href="/login">Login</a></li>
-        <li><a href="/register">Register</a></li>
-      </ul>
-    </div>
-  </nav>
-  {% if messages %}
-    {% for message in messages %}
+    {% include 'includes/navbar.html' %}
+    {% if messages %}
+        {% for message in messages %}
         <script>
               M.toast({html: "{{ message }}", classes: 'blue rounded', displayLength: 2000});
         </script>
