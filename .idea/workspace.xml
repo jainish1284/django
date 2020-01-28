@@ -5,12 +5,22 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_ecom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_ecom/django_ecom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/django_ecom/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/main/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/django_ecom/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,6 +37,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/django_ecom/main" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/django_ecom" />
+      <recent name="$PROJECT_DIR$/django_ecom/main" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/django_ecom/main" />
     </key>
@@ -42,8 +56,30 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="367" y="191" width="574" height="368" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580109194313">
+      <screen x="0" y="27" width="1366" height="698" />
+    </state>
+    <state x="367" y="191" width="574" height="368" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.698@0.27.1366.698" timestamp="1580109194313" />
+    <state x="403" y="201" width="598" height="390" key="#com.intellij.fileTypes.FileTypeChooser/49.27.1317.741@49.27.1317.741" timestamp="1579760057391" />
+    <state x="346" y="46" key="search.everywhere.popup" timestamp="1580114494726">
+      <screen x="0" y="27" width="1366" height="698" />
+    </state>
+    <state x="346" y="46" key="search.everywhere.popup/0.27.1366.698@0.27.1366.698" timestamp="1580114494726" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/django_ecom/main/views.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
