@@ -2,12 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f57b33d0-dd31-4bad-a984-fc9c700d46e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/django_ecom/main/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_ecom/main/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_ecom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_ecom/django_ecom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/django_ecom/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_ecom/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/main/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_ecom/main/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/django_mysql/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/django_mysql/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/django_mysql/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/django_mysql/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/django_mysql/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/main/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/main/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/main/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/main/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/main/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/main/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/main/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/main/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/django_mysql/manage.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/django_ecom/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_ecom/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_ecom/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_ecom/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
