@@ -2,13 +2,13 @@
 
 {% block content %}
   <div class="row">
-    {% for tut in tutorials %}
+    {% for tut, partone in part_ones.items %}
         <div class="col s12 m6">
           <div class="card hoverable">
             <div class="card-content">
-              <span class="card-title">{{tut.tutorial_category}}</span>
-              <p style="font-size:70%">Description: {{tut.category_summary}}</p>
-              <a href='{{tut.category_slug}}'>Learn More</a>
+              <span class="card-title">{{tut.tutorial_series}}</span>
+              <p style="font-size:70%">Description: {{tut.series_summary}}</p>
+              <a href='{{partone}}'>Learn More</a>
             </div>
           </div>
         </div>
