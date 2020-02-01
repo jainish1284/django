@@ -22,5 +22,6 @@ urlpatterns = [
     path('', views.homepage, name="homepage"),
     path('register/', views.register, name="register"),
     path('logout/', views.logout_request, name='logout_request'),
-    path('login/', views.login_request, name='login_request')
+    path('login/', views.login_request, name='login_request'),
+    path('<single_slug_view>', views.single_slug, name="single_slug_view")
 ]

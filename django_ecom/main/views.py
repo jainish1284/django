@@ -2,17 +2,44 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 from .forms import NewUserForm
-from .models import Tutorials
+from .models import Tutorials, TutorialCategory, TutorialSeries
 # from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout, authenticate
 from django.contrib import messages
 
 
+def single_slug(request, single_slug_view):
+    categories = [c.category_slug for c in TutorialCategory.objects.all()]
+    if single_slug_view in categories:
+        matching_series = TutorialSeries.objects.filter(tutorial_category__category_slug=single_slug_view)
+        series_urls = {}
+        for m in matching_series.all():
+            part_one = Tutorials.objects.filter(tutorial_series__tutorial_series=m.tutorial_series).earliest('tutorial_published')
+            series_urls[m] = part_one.tutorial_slug
+        return render(request,
+                      "category.html",
+                      {'part_ones':series_urls})
+
+    tutorials = [t.tutorial_slug for t in Tutorials.objects.all()]
+    if single_slug_view in tutorials:
+        this_tutorial = Tutorials.objects.filter(tutorial_slug=single_slug_view)
+        # this_tutorial = Tutorials.objects.get(tutorial_slug=single_slug_view)
+        tutorials_from_series = Tutorials.objects.filter(tutorial_series__tutorial_series=this_tutorial.tutorial_series).order_by('tutorial_published')
+        this_tutorial_idx = list(tutorials_from_series).index(this_tutorial)
+        return render(request=request,
+                      template_name='tutorial.html',
+                      context={"tutorial": this_tutorial,
+                               "sidebar": tutorials_from_series,
+                               "this_tut_idx": this_tutorial_idx})
+
+    return HttpResponse(f"No match for {single_slug_view}")
+
+
 def homepage(request):
     return render(request=request,
                   template_name="index.html",
-                  context={"tutorials": Tutorials.objects.all()})
+                  context={"tutorials": TutorialCategory.objects.all()})
 
 
 # def register(request):
@@ -51,7 +78,6 @@ def register(request):
     return render(request=request,
                   template_name="register.html",
                   context={"form":form})
-
 
 
 def logout_request(request):
