@@ -3,6 +3,6 @@ from django.urls import path
 from project.com.vo.SubCategoryVO import SubCategoryVO
 
 urlpatterns = [
-    path('', SubCategoryVO.adminHome, name="adminhome"),
-    # path('admin/', admin.site.urls),
+    path('', SubCategoryVO.adminLoadDashboard, name="adminLoadDashboard"),
+    path('admin/loadDashboard/', SubCategoryVO.adminLoadDashboard, name="adminLoadDashboard"),
 ]

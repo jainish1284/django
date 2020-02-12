@@ -1,0 +1,92 @@
+->PYTHON PACKAGE	
+	project
+	com
+	vo
+	dao
+	controller
+
+->FILE NAME
+
+	SubCategoryController.py
+	SubCategoryDAO.py
+	SubCategoryVO.py
+	
+->CLASS NAME
+	
+	SubCategoryController
+	SubCategoryDAO
+	SubCategoryVO
+
+->OBJECT NAME
+	
+	subCategoryDAO
+	subCategoryVO
+	subCategoryVOList
+
+->VARIABLE NAME(VO class Member Variables)
+
+	subCategoryId
+	subCategoryName
+	subCategoryDescription
+	subCategory_CategoryId(FK)
+	
+->METHOD NAME(DAO class Member Functions)
+	insertSubCategory()
+	searchSubCategory()
+	deleteSubCategory()
+	editSubCategory()
+	updateSubCategory()
+
+->TEXTBOX NAME
+
+	subCategoryId
+	subCategoryName
+	subCategoryDescription
+	subCategory_CategoryId
+
+->HTML PAGE NAME(FileName)
+
+	addSubCategory.html
+	viewSubCategory.html
+	editSubCategory.html
+	
+->TABLE NAME OF DATABASE
+
+	subcategorymaster
+	
+->COLUMN NAME OF TABLE
+
+	subCategoryId
+	subCategoryName
+	subCategoryDescription
+	subCategory_CategoryId(FK)
+	
+->URL PATTERN
+	admin-side:-
+		/admin/loadDashboard
+		/admin/loadSubCategory
+		/admin/insertSubCategory
+		/admin/searchSubCategory
+		/admin/deleteSubCategory
+		/admin/editSubCategory
+		/admin/updateSubCategory
+		
+	user-side:-
+		/user/loadDashboard
+		/user/loadSubCategory
+		/user/insertSubCategory
+		/user/searchSubCategory
+		/user/deleteSubCategory
+		/user/editSubCategory
+		/user/updateSubCategory
+	
+->URL PATTERN FUNCTION NAME(In Controller class)
+	adminLoadDashboard()
+	adminLoadSubCategory()
+	adminInsertSubCategory()
+	adminSearchSubCategory()
+	adminDeleteSubCategory()
+	adminEditSubCategory()
+	adminUpdateSubCategory()
+		
+	
