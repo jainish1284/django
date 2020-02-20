@@ -1,24 +1,23 @@
-from django.db import models
+# from django.db import models
 from project.com.dao import con_db
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import sessionmaker
 
+Base = declarative_base()
+engine = con_db()
+Session = sessionmaker(bind=engine)
+session = Session()
+Base.metadata.create_all(engine)
 
-class CategoryDAO(models.Model):
-    categoryId = models.AutoField(primary_key=True)
-    categoryName = models.CharField(max_length=200)
+class CategoryDAO(Base):
+    __tablename__ = 'categorymaster'
+
+    categoryId = Column(Integer, primary_key=True)
+    categoryName = Column(String)
 
     def searchCategory(self):
-        print("innn")
+        results = session.add(CategoryDAO('Jainish'))
+        return results
 
-    class Meta():
-        db_table = 'categorymaster'
-
-
-class SubCategoryDAO(models.Model):
-    homePageName = models.CharField(max_length=200)
-    homePageDescription = models.CharField(max_length=200)
-
-    def insertSubCategory(self):
-        connection = con_db()
-        result = connection.execute('select * from user')
-        return result
 

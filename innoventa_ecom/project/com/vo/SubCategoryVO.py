@@ -7,5 +7,6 @@ class SubCategoryVO:
 
     def adminLoadDashboard(request):
         categorydao = CategoryDAO()
+        print(categorydao)
         if request.method == 'GET':
-            return render(request, "home.html", {'SubCategory': categorydao.searchCategory })
+            return render(request, "home.html", {'result': categorydao.searchCategory})
